@@ -1,0 +1,319 @@
+/* ===========================
+   REGISTER PAGE
+=========================== */
+
+.register-page {
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.register-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+.overlay {
+    position: fixed;
+    inset: 0;
+    background: linear-gradient(135deg,
+            rgba(8, 15, 35, .92),
+            rgba(15, 23, 42, .90),
+            rgba(67, 56, 202, .75));
+    z-index: -1;
+}
+
+/* LEFT SIDE */
+
+.left-content {
+
+    padding-right: 50px;
+
+}
+
+.left-content h1 {
+
+    font-size: 58px;
+
+    font-weight: 700;
+
+    color: white;
+
+}
+
+.left-content h3 {
+
+    font-size: 32px;
+
+    color: #e2e8f0;
+
+}
+
+.left-content p {
+
+    color: #d1d5db;
+
+    font-size: 18px;
+
+    line-height: 32px;
+
+}
+
+.feature-list {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 22px;
+
+}
+
+.feature-list div {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    font-size: 18px;
+
+    color: white;
+
+}
+
+.feature-list i {
+
+    color: #38bdf8;
+
+    font-size: 25px;
+
+}
+
+/* CARD */
+
+.register-card {
+
+    background: rgba(255, 255, 255, .08);
+
+    backdrop-filter: blur(20px);
+
+    border: 1px solid rgba(255, 255, 255, .15);
+
+    border-radius: 25px;
+
+    padding: 40px;
+
+    color: white;
+
+    box-shadow:
+        0 20px 45px rgba(0, 0, 0, .45);
+
+    transition: .35s;
+
+}
+
+.register-card:hover {
+
+    transform: translateY(-6px);
+
+}
+
+.register-card h2 {
+
+    font-weight: 700;
+
+}
+
+.register-card p {
+
+    color: #cbd5e1;
+
+}
+
+/* LABEL */
+
+.register-card label {
+
+    font-weight: 600;
+
+    margin-bottom: 8px;
+
+}
+
+/* INPUT */
+
+.register-card .form-control,
+.register-card .form-select {
+
+    height: 55px;
+
+    border-radius: 14px;
+
+    border: 1px solid rgba(255, 255, 255, .15);
+
+    background: rgba(255, 255, 255, .08);
+
+    color: white;
+
+}
+
+.register-card .form-control::placeholder {
+
+    color: #d1d5db;
+
+}
+
+.register-card .form-control:focus,
+.register-card .form-select:focus {
+
+    background: rgba(255, 255, 255, .10);
+
+    color: white;
+
+    box-shadow: none;
+
+    border-color: #60a5fa;
+
+}
+
+.register-card option {
+
+    color: black;
+
+}
+
+/* BUTTON */
+
+.register-btn {
+
+    height: 55px;
+
+    border: none;
+
+    border-radius: 14px;
+
+    background: linear-gradient(90deg,
+            #4f46e5,
+            #2563eb);
+
+    font-size: 18px;
+
+    font-weight: 600;
+
+    transition: .35s;
+
+}
+
+.register-btn:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 15px 30px rgba(37, 99, 235, .45);
+
+}
+
+/* LOGIN */
+
+.register-card a {
+
+    color: #38bdf8;
+
+    font-weight: 600;
+
+}
+
+.register-card a:hover {
+
+    color: white;
+
+}
+
+/* EYE */
+
+.eye-icon {
+
+    position: absolute;
+
+    top: 48px;
+
+    right: 18px;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-size: 18px;
+
+}
+
+/* ERRORS */
+
+small {
+
+    color: #f87171;
+
+    font-size: 13px;
+
+}
+
+/* RESPONSIVE */
+
+@media(max-width:992px) {
+
+    .left-content {
+
+        display: none;
+
+    }
+
+    .register-card {
+
+        margin: 40px 0;
+
+    }
+
+}
+
+@media(max-width:768px) {
+
+    .register-card {
+
+        padding: 30px;
+
+    }
+
+    .register-card h2 {
+
+        font-size: 30px;
+
+    }
+
+}
+
+@media(max-width:576px) {
+
+    .register-card {
+
+        padding: 22px;
+
+        border-radius: 18px;
+
+    }
+
+    .register-btn {
+
+        height: 50px;
+
+    }
+
+}

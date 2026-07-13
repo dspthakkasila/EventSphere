@@ -1,0 +1,31 @@
+.event-details-page {
+
+    padding: 30px;
+
+    background: #081120;
+
+    min-height: 100vh;
+
+}
+
+.event-details-content {
+
+    display: grid;
+
+    grid-template-columns: 2fr 1fr;
+
+    gap: 30px;
+
+    margin-top: 30px;
+
+}
+
+@media(max-width:992px) {
+
+    .event-details-content {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
